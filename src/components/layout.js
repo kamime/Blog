@@ -12,11 +12,10 @@ import { useStaticQuery, graphql } from "gatsby"
 import Header from "./header"
 import "./layout.css"
 
-const Layout = ({ children }) => {
-
+const Layout = ({ children, isPostPage }) => {
   return (
     <>
-      <Header siteTitle="Kamime" />
+      <Header siteTitle="Kamime" isPostPage={isPostPage} />
       <div
         style={{
           margin: `0 auto`,
