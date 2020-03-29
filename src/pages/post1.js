@@ -5,7 +5,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 const ThirdPage = () => (
-  <Layout>
+  <Layout isPostPage={true}>
     <SEO title="Projetos" />
     <h1>Projetos Pessoais</h1>
     <p>Inserir projetos da equipe</p>
