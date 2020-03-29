@@ -1,5 +1,5 @@
 html {
-  font-family: sans-serif;
+  font-family: Helvetica;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
@@ -40,7 +40,7 @@ template {
   display: none;
 }
 a {
-  background-color: transparent;
+  background-color: rgb(24, 23, 23);
   -webkit-text-decoration-skip: objects;
 }
 a:active,
