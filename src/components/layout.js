@@ -13,19 +13,10 @@ import Header from "./header"
 import "./layout.css"
 
 const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} />
+      <Header siteTitle="Kamime" />
       <div
         style={{
           margin: `0 auto`,
@@ -42,10 +33,6 @@ const Layout = ({ children }) => {
       </div>
     </>
   )
-}
-
-Layout.propTypes = {
-  children: PropTypes.node.isRequired,
 }
 
 export default Layout

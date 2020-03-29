@@ -2,7 +2,23 @@ html {
   font-family: Helvetica;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+} 
+* {
+  font-family: Helvetica;
 }
+a {
+  text-decoration: none;
+}
+a:visited {
+  color: #333;
+}
+
+a:-webkit-any-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+
 body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
@@ -40,7 +56,7 @@ template {
   display: none;
 }
 a {
-  background-color: rgb(24, 23, 23);
+  background-color: transparent;
   -webkit-text-decoration-skip: objects;
 }
 a:active,

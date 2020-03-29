@@ -14,3 +14,4 @@ const ThirdPage = () => (
 )
 
 export default ThirdPage
+
