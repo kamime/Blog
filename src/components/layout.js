@@ -30,9 +30,11 @@ const StyledLayout = styled.div`
     text-align: center;
     font-size: 25px;
     margin-bottom: 25px;
+    box-shadow: 0 0 5px 0px #333;
     &.disable {
       padding: 0;
       margin-bottom: 50px;
+      box-shadow: none;
     }
   }
   main {
@@ -41,6 +43,9 @@ const StyledLayout = styled.div`
 
   footer {
     padding: 20px 20%;
+  }
+
+  .logo {
   }
 `
 

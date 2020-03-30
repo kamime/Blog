@@ -2,40 +2,27 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import styled from "styled-components"
 import React from "react"
-
-//  “Blog”, “Projetos pessoais”, “Tech Stack”, “Quem somos”
+import kamime from "../images/kamime.png"
 
 const Header = ({ isPostPage }) => (
   <header
     style={{
       background: `white`,
-      borderBottom: isPostPage ? "none" : `1px solid black`,
       background: isPostPage ? "#333" : "#fff",
+      boxShadow: isPostPage ? "" : "0 0 5px 0px #bfbfbf",
     }}
   >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-        display: "grid",
-        justifyContent: "center",
-        gridTemplateColumns: "repeat(6, auto)",
-        color: isPostPage ? "#fff" : "#333",
-        textTransform: "uppercase",
-        gridColumnGap: "25px",
-        fontWeight: "bold",
-        background: isPostPage ? "#333" : "#fff",
-      }}
-    >
-      <div className="logo"></div>
+    <StyledTabs className={isPostPage ? "enabled" : ""}>
+      <div className="logo">
+        <img src={kamime} />
+      </div>
       <div className="title">Kamime</div>
 
       <NavigationLink to="/blog">Blog</NavigationLink>
       <NavigationLink to="/projetos">Projetos Pessoais</NavigationLink>
       <NavigationLink to="/techstack">Tech Stack</NavigationLink>
       <NavigationLink to="/quemsomos">Quem somos</NavigationLink>
-    </div>
+    </StyledTabs>
   </header>
 )
 
@@ -49,6 +36,28 @@ const NavigationLink = styled(Link)`
   }
 `
 
+const StyledTabs = styled.div`
+  margin: 0 auto;
+  max-width: 960;
+  padding: 1.45rem 1.0875rem;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(6, auto);
+  color: #333;
+  text-transform: uppercase;
+  grid-column-gap: 25px;
+  font-weight: bold;
+  background: #fff;
+
+  &.enabled {
+    color: #fff;
+    background: #333;
+  }
+  .logo {
+    width: 20px;
+    height: 20px;
+  }
+`
 Header.propTypes = {
   siteTitle: PropTypes.string,
 }
