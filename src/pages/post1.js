@@ -21,8 +21,15 @@ const ThirdPage = () => (
       programação a serem utilizadas. Com o advento da pandemia da Covid-19,
       tivemos que partir para o sistema de “home office”. Utilizamos o Google
       Meet para as reuniões, bem como a extensão Live Share do VS Code para,
-      juntos, trabalharmos nós códigos. Foi muito produtivo e cada um dos três
+      juntos, trabalharmos no códigos. Foi muito produtivo e cada um dos três
       membros pode contribuir com ideias e desenvolvimento.
+    </p>
+
+    <p>
+      Quanto a personalização do site, foi utilizado o framework React com
+      customizações de estilo fornecidas pela linguagem CSS, assim, buscando
+      padrões de cores sóbrias e animações flúidas para tornar o blog mais
+      minimalista e moderno.
     </p>
     <p>
       Ficamos muito animados com o resultado final e esperamos que vocês também

@@ -9,8 +9,10 @@ const FourthPage = () => (
     <SEO title="Tech Stack" />
     <h1>Tech Stack</h1>
     <p>O blog foi criado por meio do static generator GatsbyJs.</p>
-    <p>Utilizamos as linguagens JavaScript, React e CSS.</p>
-    
+    <p>
+      Utilizamos a linguagem de programação JavaScript, junto com o framework
+      React. Para customização, utilizamos a linguagem de folha de estilo CSS.
+    </p>
   </Layout>
 )
 
