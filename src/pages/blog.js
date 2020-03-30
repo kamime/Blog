@@ -22,12 +22,12 @@ const SecondPage = () => (
         title="Covid-19:"
         descpt="Como a pandemia mudou nossa rotina tecnológica."
         image={covid}
-        to="/blog"
+        to="/404"
       />
       <Post
         title="CTRL C, CTRL V:"
         descpt="Morre cientista da computação que inventou um dos comandos mais ..."
-        to="/blog"
+        to="/404"
         image={copyPaste}
       />
     </Posts>
