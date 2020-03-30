@@ -5,7 +5,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 const ThirdPage = () => (
-  <Layout isPostPage={true} postTitle="Post 1">
+  <Layout isPostPage={true} postTitle="História do Blog">
     <h1>Como surgiu o blog</h1>
     <p>O blog fez parte de um projeto acadêmico 
       da disciplina de Projeto Interdisciplinar II, do 3º período do curso 
@@ -23,7 +23,7 @@ const ThirdPage = () => (
     </p>
     <p>
       Ficamos muito animados com o resultado final e esperamos que vocês 
-      também tenham uma ótima experiência com o blog.
+      também tenham uma ótima experiência com o blog!
     </p>
   </Layout>
 )

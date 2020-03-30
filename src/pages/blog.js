@@ -10,8 +10,8 @@ const SecondPage = () => (
   <Layout>
     <SEO />
     <Posts>
-      <Post title="Primeira postagem: criação do Blog" descpt="Saiba como foi a história de criação do blog" />
-      <Post title="Primeira postagem: criação do Blog" descpt="Segue aqui uma breve descrição" />
+      <Post title="Criação do Blog:" descpt="Conheça a história de criação do blog" />
+      <Post title="Covid-19:" descpt="Como a pandemia mudou nossa rotina tecnológica" />
       <Post title="Primeira postagem: criação do Blog" descpt="Segue aqui uma breve descrição" />
     </Posts>
   </Layout>
