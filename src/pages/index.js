@@ -9,7 +9,8 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <h1>Kamime</h1>
-    <p>Bem vindos à Kamime.</p>
+    <p>Bem vindos à Kamime!</p>
+    <p>Uma equipe pronta para desenvolver soluções tecnológicas para os seus problemas.</p>
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}></div>
   </Layout>
 )
