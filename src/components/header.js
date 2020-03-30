@@ -16,7 +16,7 @@ const Header = ({ isPostPage }) => (
       <div className="logo">
         <img src={kamime} />
       </div>
-      <div className="title">Kamime</div>
+      <div className="title"><NavigationLink to="/">Kamime</NavigationLink></div>
 
       <NavigationLink to="/blog">Blog</NavigationLink>
       <NavigationLink to="/projetos">Projetos Pessoais</NavigationLink>
@@ -42,7 +42,7 @@ const StyledTabs = styled.div`
   padding: 1.45rem 1.0875rem;
   display: grid;
   justify-content: center;
-  grid-template-columns: repeat(6, auto);
+  grid-template-columns: repeat(7, auto);
   color: #333;
   text-transform: uppercase;
   grid-column-gap: 25px;
