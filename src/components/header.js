@@ -3,6 +3,7 @@ import PropTypes from "prop-types"
 import styled from "styled-components"
 import React from "react"
 import kamime from "../images/kamime.png"
+import kamimeWhite from "../images/kamime_white.png"
 
 const Header = ({ isPostPage }) => (
   <header
@@ -14,9 +15,11 @@ const Header = ({ isPostPage }) => (
   >
     <StyledTabs className={isPostPage ? "enabled" : ""}>
       <div className="logo">
-        <img src={kamime} />
+        <img src={isPostPage ? kamimeWhite : kamime} />
       </div>
-      <div className="title"><NavigationLink to="/">Kamime</NavigationLink></div>
+      <div className="title">
+        <NavigationLink to="/">Kamime</NavigationLink>
+      </div>
 
       <NavigationLink to="/blog">Blog</NavigationLink>
       <NavigationLink to="/projetos">Projetos Pessoais</NavigationLink>
