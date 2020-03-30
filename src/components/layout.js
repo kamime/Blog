@@ -1,37 +1,47 @@
-/**
- * Layout component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.org/docs/use-static-query/
- */
-
 import React from "react"
-import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
 import "./layout.css"
+import styled from "styled-components"
 
-const Layout = ({ children, isPostPage }) => {
+const Layout = ({ children, isPostPage, postTitle }) => {
   return (
-    <>
+    <StyledLayout>
       <Header siteTitle="Kamime" isPostPage={isPostPage} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
-        }}
-      >
-        <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
+      <div className={`post-title ${isPostPage ? "" : "disable"}`}>
+        {postTitle}
       </div>
-    </>
+      <main>{children}</main>
+      <footer>© {new Date().getFullYear()} Kamime</footer>
+    </StyledLayout>
   )
 }
+
+const StyledLayout = styled.div`
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: auto auto 1fr auto;
+
+  > .post-title {
+    background: #333;
+    color: white;
+    padding: 50px 20%;
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 25px;
+    &.disable {
+      padding: 0;
+      margin-bottom: 50px;
+    }
+  }
+  main {
+    padding: 0 20%;
+  }
+
+  footer {
+    padding: 20px 20%;
+  }
+`
 
 export default Layout

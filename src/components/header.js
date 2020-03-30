@@ -9,8 +9,7 @@ const Header = ({ isPostPage }) => (
   <header
     style={{
       background: `white`,
-      marginBottom: `1.45rem`,
-      borderBottom: `1px solid black`,
+      borderBottom: isPostPage ? "none" : `1px solid black`,
       background: isPostPage ? "#333" : "#fff",
     }}
   >
