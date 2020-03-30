@@ -8,8 +8,9 @@ const FourthPage = () => (
   <Layout>
     <SEO title="Tech Stack" />
     <h1>Tech Stack</h1>
-    <p>Tecnologias utilizadas</p>
-    <Link to="/">Go back to the homepage</Link>
+    <p>O blog foi criado por meio do static generator Gatsby.js.</p>
+    <p>Utilizamos as linguagens JavaScript, React e CSS.</p>
+    
   </Layout>
 )
 
