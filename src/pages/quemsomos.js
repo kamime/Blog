@@ -10,7 +10,7 @@ import imgg from "../images/huKocSp.jpg"
 
 const SecondPage = () => (
   <Layout>
-    <SEO title="Page two" />
+    <SEO title="Quem somos" />
     <h1>Quem somos</h1>
 
     <p>
@@ -32,32 +32,37 @@ const SecondPage = () => (
       </div>
       <div className="container">
         <div className="name">Erika Alcântara</div>
-        <div className="descpt">Desenvolvedora e estudante do 3º período do curso de
-        de Ciência da Computação da Unifil.</div>
+        <div className="descpt">
+          Desenvolvedora e estudante do 3º período do curso de de Ciência da
+          Computação da Unifil.
+        </div>
       </div>
     </AboutCard>
-
+    <br></br>
     <AboutCard>
       <div className="imgg">
         <img src={imgg}></img>
       </div>
       <div className="container">
         <div className="name">Guilherme Rodrigues</div>
-<<<<<<< HEAD
-        <div className="descpt">Programador e Desenvolverdor em crescimento... 3º período em Ciência da Computação.</div>
-=======
-        <div className="descpt">>Programador e Desenvolverdor em crescimento... 3º período em Ciência da Computação.</div>
->>>>>>> 5d83a71ad46881d010caef136171ae0aff8f3074
+        <div className="descpt">
+          Programador e Desenvolverdor em crescimento... 3º período em Ciência
+          da Computação.
+        </div>
       </div>
     </AboutCard>
-
+    <br></br>
     <AboutCard>
       <div className="image">
         <img src={image}></img>
       </div>
       <div className="container">
         <div className="name">Misael Vergara</div>
-        <div className="descpt">Desenvolvedor de sei lá o que.</div>
+        <div className="descpt">
+          Desenvolvedor e estudante do 3º período de Ciência da Computação na
+          Unifil. Atua como Desenvolvedor Fullstack utilizando tecnologias como
+          React, MongoDB, Express.js entre outras.
+        </div>
       </div>
     </AboutCard>
   </Layout>
@@ -67,11 +72,7 @@ const AboutCard = styled.div`
   width: 100%;
   display: grid;
   grid-template-columns: auto 1fr;
-  background: linear-gradient(
-    75deg,
-    rgb(255, 255, 255) 0%,
-    rgb(251, 251, 251) 100%
-  );
+  background: white;
   border-radius: 8px;
   box-shadow: 0px 2px 4px 1px #f1f1f1;
   padding: 15px;
