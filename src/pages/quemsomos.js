@@ -43,7 +43,7 @@ const SecondPage = () => (
       </div>
       <div className="container">
         <div className="name">Guilherme Rodrigues</div>
-        <div className="descpt">Cursando Ciência da Computação.</div>
+        <div className="descpt">>Programador e Desenvolverdor em crescimento... 3º período em Ciência da Computação.</div>
       </div>
     </AboutCard>
 
