@@ -27,8 +27,8 @@ const ThirdPage = () => (
 
     <p>
       Quanto a personalização do site, foi utilizado o framework React com
-      customizações de estilo fornecidas pela linguagem CSS, assim, buscando
-      padrões de cores sóbrias e animações flúidas para tornar o blog mais
+      customizações de estilo fornecidas pela linguagem CSS, buscando, assim,
+      padrões de cores sóbrias e animações fluidas para tornar o blog mais
       minimalista e moderno.
     </p>
     <p>
